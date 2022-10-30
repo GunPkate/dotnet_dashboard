@@ -17,11 +17,23 @@ set path for style and script in angular.json
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/bootstrap/dist/jquery/jquery.min.js",
+              "./node_modules/jquerydist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js"
             ]
 ```
+
+set Router for sidebar navigation
+
+```
+ng g c section-health
+ng g c section-orders
+ng g c section-sales
+
+```
+
+in app-routing.module import sections modules and add array of route paths
+add RouterModule in app.module.ts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
