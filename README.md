@@ -1,5 +1,14 @@
 # DotnetNg
 
+## Start Project
+
+```
+ng new ${file name}
+ng g c navbar
+ng g c sidebar
+npm i --save bootstrap@4.0.0-beta jquery
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Development server
