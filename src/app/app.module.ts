@@ -11,6 +11,7 @@ import { SectionSalesComponent } from './sections/section-sales/section-sales.co
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [

@@ -19,7 +19,8 @@ set path for style and script in angular.json
             "scripts": [
               "./node_modules/jquerydist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./node_modules/popper.js/dist/umd/popper.min.js"
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/chart.js/dist/chart.min.js"
             ]
 ```
 
