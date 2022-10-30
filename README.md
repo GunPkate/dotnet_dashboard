@@ -6,7 +6,21 @@
 ng new ${file name}
 ng g c navbar
 ng g c sidebar
-npm i --save bootstrap@4.0.0-beta jquery
+npm i --save bootstrap@4.0.0-beta jquery popper.js
+```
+
+set path for style and script in angular.json
+
+```
+            "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "./node_modules/bootstrap/dist/jquery/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js"
+            ]
 ```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
