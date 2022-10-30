@@ -25,7 +25,7 @@ import { NgChartsModule } from 'ng2-charts';
     PieChartComponent,
     LineChartComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, NgChartsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

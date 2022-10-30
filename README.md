@@ -33,6 +33,9 @@ ng g c section-sales
 
 ```
 
+chart type is changed due to version
+https://stackoverflow.com/questions/40016333/ng2-charts-cant-bind-to-datasets-since-it-isnt-a-known-property-of-canvas
+
 in app-routing.module import sections modules and add array of route paths
 add RouterModule in app.module.ts
 
