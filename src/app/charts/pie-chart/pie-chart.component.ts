@@ -10,7 +10,7 @@ export class PieChartComponent implements OnInit {
   constructor() {}
 
   // pieChartData: any[] = [350, 450, 120];
-  public pieChartLabels: string[] = ['XYZ logistics', 'Cudsun'];
+  // public pieChartLabels: string[] = ['XYZ logistics', 'Cudsun'];
   // pieChartColors: any[] = [
   //   {
   //     backgroudColor: ['#26547c', '#ff6b6b', '#ffd166'],
@@ -18,15 +18,21 @@ export class PieChartComponent implements OnInit {
   // ];
   public pieChartType: any = 'pie';
   public pieChartLegend: boolean = true;
+  public pieChartOptions: any = {
+    scaleShowVerticalLines: false,
+    responsive: true,
+  };
   public pieChartData: ChartData<'pie'> = {
     datasets: [
       {
         label: 'Title label',
         data: [350, 450, 120],
         backgroundColor: ['#26547c', '#ff6b6b', '#ffd166'],
+        borderColor: '#111',
         hoverBackgroundColor: ['darkred', 'darkgreen', 'darkblue'],
       },
     ],
+    labels: ['XYZ logistics', 'Cudsun', 'Family'],
   };
   ngOnInit(): void {}
 }
