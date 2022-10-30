@@ -6,6 +6,12 @@ html {
     height: 100%;
 }
 
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+    background-color: #1c2228;
+    color: #f7fff7;
+    height:100%}
+
 a {
     color: #44a4cd;
 }
@@ -16,4 +22,8 @@ a:hover{
 
 .shadow {
     box-shadow: 0 8px 12px rgba(0,0,0,0.2), 0 5px 6px rgba(0,0,0,0.3);
+}
+
+.section-container{
+    padding: 30px;
 }
