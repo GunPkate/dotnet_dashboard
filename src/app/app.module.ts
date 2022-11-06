@@ -13,6 +13,7 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { NgChartsModule } from 'ng2-charts';
 import { ServerComponent } from './server/server.component';
+import { SectionMasterfilesComponent } from './sections/section-masterfiles/section-masterfiles.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ServerComponent } from './server/server.component';
     PieChartComponent,
     LineChartComponent,
     ServerComponent,
+    SectionMasterfilesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule, NgChartsModule],
   providers: [],

@@ -1,3 +1,4 @@
+import { SectionMasterfilesComponent } from './sections/section-masterfiles/section-masterfiles.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SectionSalesComponent } from './sections/section-sales/section-sales.component';
@@ -8,7 +9,12 @@ const routes: Routes = [
   { path: 'sales', component: SectionSalesComponent },
   { path: 'orders', component: SectionOrdersComponent },
   { path: 'health', component: SectionHealthComponent },
-  { path: '' , redirectTo: 'sales', pathMatch: "full"}
+  {
+    path: 'master',
+    component: SectionMasterfilesComponent,
+    children: [{ path: 'category', component: SectionOrdersComponent }],
+  },
+  { path: '', redirectTo: 'sales', pathMatch: 'full' },
 ];
 
 @NgModule({

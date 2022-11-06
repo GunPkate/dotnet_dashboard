@@ -1,11 +1,5 @@
-<ul class="nav nav-pills flex-column">
+<ul *ngFor="let sidebar of sidebars" class="nav nav-pills flex-column">
     <li class="nav-item">
-        <a class="nav-link" routerLink="/sales">Sale Volume</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" routerLink="/orders" >Latest Order</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" routerLink="/health">System Health</a>
+        <a class="nav-link" style="font-size: 20px; font-weight: bold; color:rgb(126, 208, 243) " routerLink="/{{sidebar.path}}">{{sidebar.title}}</a>
     </li>
 </ul>

@@ -1,0 +1,26 @@
+<div class="section-container">
+    <h2>File List</h2>
+    <table class="table table-inverse table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>File</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let file of files">
+                <td>{{file.id}}</td>
+                <td>
+                    
+                    <a class="nav-link" style="font-size: 20px; font-weight: bold; color:rgb(126, 208, 243) " routerLink="/{{file.name}}">{{file.name}}</a>
+
+                </td>
+
+                <!-- <td>{{order.total}}</td>
+                <td>{{order.placed | date:'short'}}</td>
+                <td>{{order.fullfilled | date:'short'}}</td>
+                <td>Status</td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
